@@ -1,0 +1,32 @@
+{
+  "name": "vue-use-local-storage",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git"
+  },
+  "description": "Vue utility for using local storage as a data store",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vitest",
+    "test": "vitest run",
+    "build": "tsup src/index.ts --format cjs,esm --dts-resolve",
+    "lint": "tsc && eslint \"**/*.{js,ts}\" --quiet --fix",
+    "watch-test": "npm run test -- --watchAll",
+    "ci": "npm run lint && npm run test && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
