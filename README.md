@@ -7,13 +7,13 @@ This package provides a Vue 3 hook for interacting with the Local Storage API an
 Install the package with npm:
 
 ```bash
-npm install @vuehooks/use-local-storage
+npm install vue-use-local-storage-hook
 ```
 
 Or with yarn:
 
 ```bash
-yarn add @vuehooks/use-local-storage
+yarn add vue-use-local-storage-hook
 ```
 
 ## Usage
