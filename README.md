@@ -1,4 +1,4 @@
-# @vuehooks/use-local-storage
+# About
 
 This package provides a Vue 3 hook for interacting with the Local Storage API and bind the local storage to component state.
 
@@ -21,7 +21,7 @@ yarn add vue-use-local-storage-hook
 Here is a simple example of how to use the hook:
 
 ```js
-import { useLocalStorage } from "@vuehooks/use-local-storage";
+import { useLocalStorage } from "vue-use-local-storage-hook";
 
 const data = useLocalStorage("my-key", "default value");
 
