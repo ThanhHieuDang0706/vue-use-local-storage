@@ -44,9 +44,9 @@ useLocalStorage(key: string, defaultValue: string | null);
 
 ## Testing
 
-    ```bash
-    npm run test
-    ```
+```bash
+npm run test
+```
 
 ## License
 
