@@ -3,7 +3,7 @@
         "module": "commonjs",
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
-        "target": "es6",
+        "target": "ESNext",
         "noImplicitAny": true,
         "moduleResolution": "node",
         "sourceMap": true,
@@ -13,7 +13,9 @@
             "*": ["node_modules/*", "src/types/*"]
         },
         "skipLibCheck": true,
-        "noEmit": true
+        "noEmit": true,
+        "jsx": "preserve",
+        "jsxImportSource": "vue"
     },
     "include": ["src/**/*"],
 

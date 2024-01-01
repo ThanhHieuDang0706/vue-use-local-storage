@@ -20,14 +20,25 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@testing-library/vue": "^8.0.1",
+    "@types/lodash": "^4.14.202",
     "@types/node": "^20.10.6",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
+    "@vitejs/plugin-vue": "^5.0.2",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.4.0",
+    "@vue/babel-preset-jsx": "^1.4.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
     "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.19.2",
+    "jsdom": "^23.0.1",
     "ts-node": "^10.9.2",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
     "vitest": "^1.1.0",
     "vue": "^3.4.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
