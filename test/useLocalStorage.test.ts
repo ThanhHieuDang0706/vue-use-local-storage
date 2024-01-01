@@ -93,10 +93,13 @@ describe("use local storage hook", () => {
         const wrapper = mount(TestComponent, {
             props: {
                 localStorageKey: "testKey",
-                initalValue: { name: "defaultValue" }
+                initalValue: { name: "defaultValue", level: 2 }
             }
         });
-        const data = wrapper.vm.dataRef.data as ReturnType<typeof useLocalStorage>;
-        expect(data.value).toEqual({ name: "defaultValue" });
+        const data = wrapper.vm.dataRef.data as ReturnType<typeof useLocalStorage<any>>;
+        expect(data.value).toEqual({ name: "defaultValue", level: 2 });
+        data.value.level = 3;
+        await wrapper.vm.$nextTick();
+        expect(data.value).toEqual({ name: "defaultValue", level: 3 });
     });
 });

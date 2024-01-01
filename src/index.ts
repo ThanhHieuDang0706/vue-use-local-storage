@@ -67,9 +67,13 @@ function useLocalStorage<T>(key: string, defaultValue?: T) {
 
     const data = ref<T | string>(parser(rawItem) || defaultValue || "");
 
-    watch(data, (newValue) => {
-        localStorage.setItem(key, serializer(newValue as unknown as T));
-    });
+    watch(
+        data,
+        (newValue) => {
+            localStorage.setItem(key, serializer(newValue as unknown as T));
+        },
+        { deep: true, immediate: true }
+    );
 
     const handleStorageChange = (event: StorageEvent) => {
         if (event.key === key) {
