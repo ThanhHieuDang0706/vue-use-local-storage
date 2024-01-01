@@ -6,7 +6,6 @@ import { beforeEach, describe, expect, it } from "vitest";
 import TestComponent from "./TestComponent.tsx";
 import useLocalStorage from "../src/index.ts";
 import { mount, config } from "@vue/test-utils";
-import _ from "lodash";
 
 describe("use local storage hook", () => {
     beforeEach(() => {
