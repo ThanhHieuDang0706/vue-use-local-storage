@@ -15,7 +15,7 @@
     "lint": "tsc && eslint \"**/*.{js,ts}\" --quiet --fix",
     "watch-test": "npm run test -- --watchAll",
     "ci": "npm run lint && npm run test && npm run build",
-    "publish-npm": "npm run build && changeset publish"
+    "publish-npm": "npm run build && changeset version && changeset publish"
   },
   "keywords": [],
   "author": "",
