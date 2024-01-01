@@ -44,5 +44,9 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
   }
 }
